@@ -1,5 +1,6 @@
 {
   "OAuth2Client": "OAuth 登录",
+  "OAuth2Client-desc": "通过OAuth登录维基",
   "missing-parameters": "缺少 $wgOAuth2Client 的配置参数",
   "has-login": "检测到您已经以“ $1 ”的身份成功登录了，需要重新登录吗？",
   "meet-error": "登录过程中遇到了以下错误，请尝试重新登录：$1",

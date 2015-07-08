@@ -2,10 +2,10 @@
   "name": "OAuth2Client",
   "version": "0.1",
   "author": "iLtc",
-  "url": "",
+  "url": "https://github.com/iLtc/mw-OAuth2Client",
   "type": "specialpage",
   "license-name": "GPL-2.0+",
-  "descriptionmsg": "Log in from a OAuth2 Server",
+  "descriptionmsg": "OAuth2Client-desc",
 
   "ExtensionMessagesFiles": {
     "OAuth2ClientAliases": "OAuth2Client.alias.php"
