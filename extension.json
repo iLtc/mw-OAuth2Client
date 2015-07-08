@@ -1,0 +1,34 @@
+{
+  "name": "OAuth2Client",
+  "version": "0.1",
+  "author": "iLtc",
+  "url": "",
+  "type": "specialpage",
+  "license-name": "GPL-2.0+",
+  "descriptionmsg": "Log in from a OAuth2 Server",
+
+  "ExtensionMessagesFiles": {
+    "OAuth2ClientAliases": "OAuth2Client.alias.php"
+  },
+  "LogTypes": [
+    "OAuth2Client"
+  ],
+  "MessagesDirs": {
+    "OAuth2Client": [
+      "i18n"
+    ]
+  },
+
+  "AutoloadClasses": {
+    "OAuth2Client": "OAuth2Client.php",
+    "SpecialOAuth2Client": "SpecialOAuth2Client.php"
+  },
+
+  "SpecialPages": {
+    "OAuth2Client": "SpecialOAuth2Client"
+  },
+
+  "ExtensionFunctions": {
+    "UserLoadFromSession": "OAuth2Client::interceptionLogin"
+  }
+}
