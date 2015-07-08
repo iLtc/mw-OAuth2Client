@@ -15,8 +15,7 @@ class SpecialOAuth2Client extends SpecialPage {
 
         if(!isset($_SESSION)) session_start();
 
-        //$param = $request->getText( 'param' );
-        //$output->addWikiText( $wikitext );
+        //var_dump(wfMessage( 'MainPage' )->parse());
     }
 
     public function execute( $par ) {
@@ -107,14 +106,14 @@ class SpecialOAuth2Client extends SpecialPage {
                         $ssUpdate = new SiteStatsUpdate(0,0,0,0,1);
                         $ssUpdate->doUpdate();
 
-                        $returnto = "新用户";
+                        $returnto = wfMessage( 'newuser-guide' )->parse();
                     }
 
                     // Login successful
                     $u->setCookies();
 
                     // Redirect if a returnto parameter exists
-                    if(!isset($returnto)) $returnto = (!empty($_SESSION['returnto'])) ? $_SESSION['returnto'] : '首页';
+                    if(!isset($returnto)) $returnto = (!empty($_SESSION['returnto'])) ? $_SESSION['returnto'] : wfMessage( 'MainPage' )->parse();
 
                     $target = Title::newFromText($returnto);
                     if ($target) {

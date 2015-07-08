@@ -1,4 +1,8 @@
 <?php
+if ( !defined( 'MEDIAWIKI' ) ) {
+    die( 'This is a MediaWiki extension, and must be run from within MediaWiki.' );
+}
+
 class OAuth2Client {
     static function interceptionLogin(){
         global $wgRequest;
